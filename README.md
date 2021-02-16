@@ -5,7 +5,7 @@ This is a project template for [svelte](https://svelte.dev) apps using [svantic]
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit ryu-man/svantic-template svantic-app
+npx degit ryu-man/svantic-template#main svantic-app
 cd svantic-app
 ```
 
