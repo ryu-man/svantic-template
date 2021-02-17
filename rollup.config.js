@@ -34,11 +34,16 @@ function serve() {
 
 export default {
 	input: "src/index.js",
+	// if you want to build for both old and modern browsers use:
+	// output:[{...,format:"es"},{..., format:"system"}]
 	output: {
-		sourcemap: false,
+		sourcemap: true,
+		// for modern browsers
 		format: "es",
+		// for old browsers use systemj s format
+		// format: "system",
 		dir: "public/build",
-		entryFileNames: "[name].js",
+		entryFileNames: "index.js",
 		chunkFileNames: "[name].js",
 	},
 	plugins: [
@@ -54,10 +59,10 @@ export default {
 			// name pattern for emitted secondary chunks
 			chunkFileNames: "[name].css",
 			// name pattern for emitted entry chunks
-			entryFileNames: "[name].css",
+			entryFileNames: "bundel.css",
 			publicPath: "",
 			// generate sourcemap
-			sourcemap: false,
+			sourcemap: true,
 			// emit css/map files
 			emitFiles: true,
 		}),
