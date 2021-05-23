@@ -59,7 +59,7 @@ export default {
 			// name pattern for emitted secondary chunks
 			chunkFileNames: "[name].css",
 			// name pattern for emitted entry chunks
-			entryFileNames: "bundel.css",
+			entryFileNames: "index.css",
 			publicPath: "",
 			// generate sourcemap
 			sourcemap: true,
